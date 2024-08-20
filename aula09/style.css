@@ -1,0 +1,23 @@
+div{
+    background-color: aqua;
+}
+
+.um {
+    background-color:rgb(rgb(0, 0, 0), green, blue)
+}
+
+.dois{
+    background-color: rgb(rgb(0, 183, 255), green, blue);
+}
+
+.três{
+    background-color: blueviolet;
+
+}
+
+body{
+     height: 100vw;   
+     width: 100vh;
+    background-image:url("yoru.jpg");
+    background-repeat: round;
+}
