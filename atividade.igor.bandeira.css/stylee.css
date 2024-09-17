@@ -1,0 +1,74 @@
+/* Estilização do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Estilização do container */
+.container {
+    text-align: center;
+}
+
+/* Estilização da bandeira da Noruega */
+.flag.noruega {
+    width: 300px; /* Largura da bandeira */
+    height: 180px; /* Altura da bandeira */
+    background-color: #bf0a30; /* Cor de fundo vermelha */
+    position: relative;
+    border: 1px solid #ddd; /* Opcional: borda para visualização */
+}
+
+/* Cruz branca */
+.flag.noruega::before,
+.flag.noruega::after {
+    content: "";
+    position: absolute;
+    background-color: #fff; /* Cor da cruz branca */
+}
+
+/* Barra vertical da cruz branca */
+.flag.noruega::before {
+    width: 40px; /* Largura da barra vertical branca */
+    height: 100%;
+    left: 50px; /* Posicionamento horizontal da barra vertical branca */
+    top: 0;
+}
+
+/* Barra horizontal da cruz branca */
+.flag.noruega::after {
+    width: 100%;
+    height: 40px; /* Largura da barra horizontal branca */
+    top: 70px; /* Posicionamento vertical da barra horizontal branca */
+    left: 0;
+}
+
+/* Cruz azul escura */
+.flag.noruega .blue-cross {
+    position: absolute;
+    background-color: #00205b; /* Cor da cruz azul escura */
+}
+
+/* Barra vertical da cruz azul escura */
+.flag.noruega .blue-cross::before {
+    content: "";
+    width: 30px; /* Largura da barra vertical azul escura */
+    height: 100%;
+    left: 60px; /* Posicionamento horizontal da barra vertical azul escura */
+    top: 0;
+    position: absolute;
+}
+
+/* Barra horizontal da cruz azul escura */
+.flag.noruega .blue-cross::after {
+    content: "";
+    width: 100%;
+    height: 30px; /* Largura da barra horizontal azul escura */
+    top: 75px; /* Posicionamento vertical da barra horizontal azul escura */
+    left: 0;
+    position: absolute;
+}
